@@ -1,2 +1,3 @@
 # logistic-regression
-A small logistic regression implementation using Numpy
+
+A repo with implementations of classic ML algorithm and also interview questions and answers
