@@ -21,7 +21,7 @@ def sig(x):
 def get_accuracy(w, b, x_val, y_val, th=0.5):
     z = (x_val * w).sum(axis=1) + b
     a = sig(z)
-    y_pred = np.where(a >= 0.5, 1, 0)
+    y_pred = np.where(a >= th, 1, 0)
     total_true = (y_pred == y_val).astype(int).sum()
     return total_true / x_val.shape[0]
 
